@@ -16,22 +16,22 @@ public static void main(String[] args) {
   double total = 0.00;
   System.out.println("What kinda ticket do you want.");
   String ticket = scan.nextLine();
-  while (!ticket.equals("Q")){
-    if(!ticket.equals("Q") && !ticket.equals("B") && !ticket.equals("P") && !ticket.equals("L")){
-      while(!ticket.equals("Q") && !ticket.equals("B") && !ticket.equals("P") && !ticket.equals("L")){
+  while (!ticket.toLowerCase().equals("q")){
+    if(!ticket.toLowerCase().equals("q") && !ticket.toLowerCase().equals("b") && !ticket.toLowerCase().equals("p") && !ticket.toLowerCase().equals("l")){
+      while(!ticket.toLowerCase().equals("q") && !ticket.toLowerCase().equals("b") && !ticket.toLowerCase().equals("p") && !ticket.toLowerCase().equals("l")){
         System.out.println("That is not a ticket type. Try again.");
         ticket = scan.nextLine();
       }
     }
-    if(ticket.equals("B")){
+    if(ticket.toLowerCase().equals("b")){
       total = box + 1.50;
       numBox += box;
       totalB += 1;
-    }else if(ticket.equals("P")){
+    }else if(ticket.toLowerCase().equals("p")){
       total = pavilion + 1.50;
       numPavilion += pavilion;
       totalP += 1;
-    }else if(ticket.equals("L")){
+    }else if(ticket.toLowerCase().equals("l")){
       total = lawn + 1.50;
       numLawn += lawn;
       totalL += 1;
