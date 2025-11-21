@@ -24,15 +24,15 @@ public static void main(String[] args) {
       }
     }
     if(ticket.toLowerCase().equals("b")){
-      total = box + 1.50;
+      total += box + 1.50;
       numBox += box;
       totalB += 1;
     }else if(ticket.toLowerCase().equals("p")){
-      total = pavilion + 1.50;
+      total += pavilion + 1.50;
       numPavilion += pavilion;
       totalP += 1;
     }else if(ticket.toLowerCase().equals("l")){
-      total = lawn + 1.50;
+      total += lawn + 1.50;
       numLawn += lawn;
       totalL += 1;
     }
